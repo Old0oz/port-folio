@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 95px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.container {
+    background-image: url(./assests/background.png);
+    height: 100%;
+    background-size: cover;
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 25px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "profil employement adventure"
+        "skills employement hobbies"
+        "skills education hobbies";
+}
+
+.profil {
+    grid-area: profil;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.adventure {
+    grid-area: adventure;
+}
+
+.hobbies {
+    grid-area: hobbies;
+}
+
+.employement {
+    grid-area: employement;
+}
+
+.education {
+    grid-area: education;
+}
+
+.card {
+    background: rgba(96, 120, 150, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+
+
+.my-picture {
+    background-image: url(./assests/portrait.svg);
+    height: 318px;
+    width: 280px;
+}
