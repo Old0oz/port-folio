@@ -3,126 +3,124 @@
 
 <head>
     <link rel="stylesheet" href="./style.css">
-    <link rel="script" href="./script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="profil card">
-            <div class="card-front">
-                <h1>VIVIEN IOB</h1>
-                <div>FRONT-END DEVELOPER, UX/UI DESIGNER In Becoming</div>
-                <p>
-                    From 2018, I work in agile teams. Thanks to this experience I had the opportunity to learn and improved my skills as an agile full stack developer.
-
-                    Now that I have worked closely with UX/ UI designers and did my first mock-up for a client.
-
-                    I am more than motivate to discover new projects in order to express my appetite for Front-End technologies and UX/ UI design.
-                </p>
+    <header>
+        <nav>
+            <a href="#profil" class="navItem"><img src="./assests/logo.svg" alt=""></a>
+            <div class="navMenu">
+                <a href="#profil" class="navItem profilNavItem">PROFIL</a>
+                <a href="#skills" class="navItem skillsNavItem">SKILLS</a>
+                <a href="#experiences" class="navItem experiencesNavItem">EXPERIENCES</a>
+                <a href="#hobbies" class="navItem hobbiesNavItem">HOBBIES</a>
+                <a href="#contact" class="navItem contactNavItem">CONTACT</a>
             </div>
-            <div class="card-back"></div>
+        </nav>
+    </header>
+    <main>
+        <div class="scrollBar">
+            <div class="scrollItem profilScrollItem"></div>
+            <div class="scrollItem skillsScrollItem"></div>
+            <div class="scrollItem experiencesScrollItem"></div>
+            <div class="scrollItem hobbiesScrollItem"></div>
+            <div class="scrollItem contactScrollItem"></div>
         </div>
-        <div class="skills">
-            <div>
-                <h2>PERSONAL SKILLS</h2>
-                <h3>CURIOSITY</h3>
-                <h3>ETHIC</h3>
-                <h3>CRITICAL THINKING</h3>
-                <h3>HUMOR</h3>
-                <h3>LISTENING</h3>
+        <section class="profil" id="profil">
+            <div class="container">
+                <img src="./assests/portrait.png" height="500px" alt="">
+                <div class="">
+                    <h1 class=>VIVIEN IOB</h1>
+                    <h2>FRONT-END DEVELOPER, UX/UI DESIGNER In Becoming</h2>
+                    <p>
+                        From 2018, I work in agile teams. Thanks to this experience
+                        I had the opportunity to learn and improved my skills as an agile full stack developer.<br>
+                        Now that I have worked closely with UX/ UI designers and did my first mock-up for a client.<br>
+                        I am more than motivate to discover new projects in order to express my appetite for Front-End
+                        technologies and UX/ UI design.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>LANGUAGES</h2>
-            </div>
-            <div>
-                <h2>FAMEWORKS</h2>
-            </div>
-            <div>
-                <h2>LIBRARIES</h2>
-            </div>
-            <div>
-                <h2>PROGRAMMING TOOLS</h2>
-            </div>
-            <div>
-                <h2>CI / CD TOOLS</h2>
-            </div>
-            <div>
-                <h2>COLLABORATIVE TOOLS</h2>
-            </div>
-        </div>
-        <div class="adventure">
-            <h2>ADVENTURE</h2>
-            <div class="card">
-                <h3>PACIFIC CREST TRAIL</h3>
-                <p>
-                    In 2017, I became a thru-hiker, crossing the USA from the Mexican border to Canada.
+        </section>
+        <section class="skills" id="skills">
+            <h1>SKILLS</h1>
+        </section>
+        <section class="experiences" id="experiences">
+            <h1>EXPERIENCES</h1>
+            <div class="container">
+                <div>
+                    <h3>AGILE SCRUM DEVELOPER</h3>
+                    <p class="ml-auto">2018 - 2021</p>
+                    <p>@Capgemini</p>
+                    <div>
+                        <div>Angular web applications</div>
+                        <div>Angular design systemcomponents library</div>
+                        <div>Angular business logic components library</div>
+                        <div>Angular UUID interceptor library (logs)</div>
+                        <div>Angular Scaffolding generator</div>
+                        <div>Maintenance micro services (Spring Boot)</div>
 
-                    The 2653 miles helped me discovering a new part of myself. While walking for 6 months I learned about pugnacity, kindness and thoughness.
+                        <div>Working on UX/ UI</div>
+                        <div>Creating Dashboard Mock-up</div>
 
-                    I now look back at it like a once of a lifetime experience.
-                </p>
+                        <div>Initiating groomings when needed</div>
+                        <div>Communicate around team needs to improve the product</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>OPTICIAN - OPTOMETRIST</h3>
+                    <p>2011 - 2017</p>
+                    <p>@Alain Afflelou, Optique lafayette</p>
+                    <div>
+                        <div>Store management</div>
+                        <div>Advices on visual ergonomic</div>
+                        <div>Eye exams</div>
+                        <div>Contact lenses adaptations (respect of periods)</div>
+                    </div>
+                </div>
+                <div>
+                    <h2>EDUCATION</h2>
+                    <div>
+                        <h3>PROFESSIONAL SCRUM DEVELOPER 1</h3>
+
+                        <h3>FULLSTACK DEVELOPER</h3>
+                        <p>AELION, AOLYS 2018</p>
+
+                        <h3>LICENCE PROFESSIONNELLE D’OPTIQUE</h3>
+                        <p>Institut Supérieur d’Optique | 2016</p>
+
+                        <h3>BREVET DE TECHNICIEN SUPERIEUR</h3>
+                        <p>AEPO 2014</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>PACIFIC CREST TRAIL</h3>
+                    <div>
+                        <p>
+                            In 2017, I became a thru-hiker, crossing the USA from the Mexican border to Canada.
+
+                            The 2653 miles helped me discovering a new part of myself. While walking for 6 months I learned about pugnacity, kindness and thoughness.
+
+                            I now look back at it like a once of a lifetime experience.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hobbies">
-            <h2>HOBBIES</h2>
-            <img src="./assests/climbing.svg" alt="" srcset="">
-            <img src="./assests/climbing.svg" alt="" srcset="">
-            <img src="./assests/climbing.svg" alt="" srcset="">
-            <img src="./assests/climbing.svg" alt="" srcset="">
-        </div>
-        <div class="employement">
-            <h2>EMPLOYEMENT HISTORY</h2>
-            <div class="card">
-                <h3>AGILE SCRUM DEVELOPER</h3>
-                <p>2018 - 2021</p>
-                <p>@Capgemini</p>
-                <p>
-                    Angular web applications
-                    Angular design systemcomponents library
-                    Angular business logic components library
-                    Angular GUID interceptor library (logs)
-                    Angular Scaffolding generator
-                    Maintenance micro services (Spring Boot)
+        </section>
+        <section class="hobbies" id="hobbies">
+            <h1>HOBBIES</h1>
 
-                    Working on UX/ UI
-                    Creating Dashboard Mock-up
+        </section>
+        <section class="contact" id="contact">
+            <h1>CONTACT</h1>
 
-                    Initiating groomings when needed
-                    Communicate around team needs to improve the product
-                </p>
-
-                <h3>OPTICIAN - OPTOMETRIST</h3>
-                <p>2011 - 2017</p>
-                <p>@Alain Afflelou, Optique lafayette</p>
-                <p>
-                    Store management
-                    Advices on visual ergonomic
-                    Eye exams
-                    Contact lenses adaptations (respect of periods)
-                </p>
-
-            </div>
-        </div>
-        <div class="education">
-            <h2>EDUCATION</h2>
-            <div class="card">
-                <h3>PROFESSIONAL SCRUM DEVELOPER 1</h3>
-
-                <h3>FULLSTACK DEVELOPER</h3>
-                <p>AELION, AOLYS 2018</p>
-
-                <h3>LICENCE PROFESSIONNELLE D’OPTIQUE</h3>
-                <p>Institut Supérieur d’Optique | 2016</p>
-
-                <h3>BREVET DE TECHNICIEN SUPERIEUR</h3>
-                <p>AEPO 2014</p>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 
 </html>

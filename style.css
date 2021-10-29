@@ -1,90 +1,141 @@
+:root {
+    scroll-behavior: smooth;
+    --main-color: #8e7e0c;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-    color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    background: radial-gradient(50% 535.81% at 50% 50%, #181818 0%, #0c0c0c 100%);
+    color: #fff;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
+
+.scrollBar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-right: 40px;
+    margin-top: auto;
+    transform: translateY(-50%);
+}
+
+.scrollItem {
+    background-color: #484848;
+    height: 80px;
+    width: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.scrollBar .active {
+    background-color: var(--main-color);
+}
+
+nav {
+    backdrop-filter: blur(25px);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navMenu {
+
+    display: flex;
+    flex-basis: 104%;
+    max-width: 30%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navMenu span {
+    padding: 10px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.navMenu span:hover {
+    background-color: #484b5b;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navMenu .active {
+    border-bottom: 3px solid var(--main-color);
+}
+
+section {
+    height: 100vh;
+    padding: 100px;
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .profil {
+    background: radial-gradient(50% 535.81% at 50% 50%, #303030 0%, #1C1C1C 100%);
+}
+
+.skills {
+    background-color: #28c7fa;
+}
+
+.experiences {
+    background-color: #f85959;
+}
+
+.hobbies {
+    background-color: #107a8b;
+}
+
+.contact {
+    background-color: #fd0054;
+} */
 
 h1 {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
-    line-height: 95px;
+    font-size: 3.5em;
+    margin: 0;
 }
 
 h2 {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
+    margin: 0;
 }
 
 h3 {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
+    margin: 0;
 }
 
-.container {
-    background-image: url(./assests/background.png);
-    height: 100%;
-    background-size: cover;
-    padding: 50px;
-
-    display: grid;
-    grid-template-columns: 50% auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 25px 50px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "profil employement adventure"
-        "skills employement hobbies"
-        "skills education hobbies";
-}
-
-.profil {
-    grid-area: profil;
-}
-
-.skills {
-    grid-area: skills;
-}
-
-.adventure {
-    grid-area: adventure;
-}
-
-.hobbies {
-    grid-area: hobbies;
-}
-
-.employement {
-    grid-area: employement;
-}
-
-.education {
-    grid-area: education;
-}
-
-.card {
-    background: rgba(96, 120, 150, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-sizing: border-box;
-    backdrop-filter: blur(25px);
-    border-radius: 15px;
-    padding: 25px;
-}
-
-
-
-.my-picture {
-    background-image: url(./assests/portrait.svg);
-    height: 318px;
-    width: 280px;
+p {
+    margin: 0;
+    text-align: justify;
 }
